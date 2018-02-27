@@ -8,15 +8,23 @@ public class Cal {
 		String op="";
 		Scanner sc= new Scanner(System.in);
 		int res = 0;
+		String  array[] = new String[10];
 		
-		System.out.println("Kérem az 1. számot!");
+		/*System.out.println("Kérem az 1. számot!");
 		number1=sc.nextInt();
 		
 		System.out.println("Kérem az operandust!");
 		op=sc.next();
 		
 		System.out.println("Kérem a 2. számot!");
-		number2=sc.nextInt();
+		number2=sc.nextInt();*/
+		
+		System.out.println("kérem a mûveletet!");
+		array=sc.next().split(" ");
+		
+		number1 = Integer.parseInt(array[0]);
+		op = array[1];
+		number2 = Integer.parseInt(array[2]);
 		
 		sc.close();
 		
